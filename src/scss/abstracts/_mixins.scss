@@ -15,25 +15,25 @@
 
 @mixin respond ($breakpoint) {
   @if ($breakpoint==phones) {
-    @media screen and (max-width: 600px) {
+    @media screen and (max-width: 37.5em) {
       @content;
     }
   }
 
   @if ($breakpoint==tablets) {
-    @media screen and (max-width: 900px) {
+    @media screen and (max-width: 56.25em) {
       @content;
     }
   }
 
   @if ($breakpoint==mini-pc) {
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 75em) {
       @content;
     }
   }
-  
+
   @if ($breakpoint==big-screens) {
-    @media screen and (min-width: 1920px) {
+    @media screen and (min-width: 120em) {
       @content;
     }
   }

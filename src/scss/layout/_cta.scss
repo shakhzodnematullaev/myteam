@@ -3,10 +3,18 @@
     background-image: url(../img/image1.png);
     background-repeat: no-repeat;
     background-position: left 0 bottom 0;
+
+    @include respond (tablets) {
+        background-position: left 0 bottom -2rem;
+    }
 }
 
 .cta__container {
     display: flex;
     align-items: center;
     padding: 7.4rem 10.7rem;
+
+    @include respond (tablets) {
+        padding: 7.6rem 9.8rem;
+    }
 }

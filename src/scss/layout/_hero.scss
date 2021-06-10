@@ -19,5 +19,7 @@
     @include respond (tablets) {
         flex-direction: column;
         text-align: center;
+        padding-top: 11.2rem;
+        padding-bottom: 25.6rem;
     }
 }

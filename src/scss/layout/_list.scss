@@ -6,11 +6,20 @@
     @include reset-list;
     flex-direction: column;
     width: 445px;
+
+    @include respond (tablets) {
+        margin-left: 9.4rem;
+    }
 }
 
 .stories__list {
     @include reset-list;
     justify-content: space-between;
+
+    @include respond (tablets) {
+        flex-direction: column;
+
+    }
 }
 
 .sot-set__list {
@@ -19,4 +28,9 @@
     margin-bottom: 5.1rem;
     margin-left: auto;
     justify-content: space-between;
+
+    @include respond (tablets) {
+        margin-left: 0;
+        margin-bottom: 0;
+    }
 }

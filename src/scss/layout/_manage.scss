@@ -1,9 +1,12 @@
 .manage {
     background-color: #012F34;
-
     background-image: url(../img/image3.png);
     background-repeat: no-repeat;
     background-position: right 0 bottom 0;
+
+    @include respond (tablets) {
+        background-position: right 0 top 0;
+    }
 }
 
 .manage__container {
@@ -12,6 +15,13 @@
     display: flex;
     justify-content: space-between;
     align-items: stretch;
+
+    @include respond (tablets) {
+        flex-direction: column;
+        padding-top: 13.6rem;
+        padding-left: 9.8rem;
+        padding-bottom: 10rem;
+    }
 }
 
 .manage__list-item {

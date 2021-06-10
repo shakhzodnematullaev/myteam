@@ -7,6 +7,10 @@
 .stories__container {
     padding-top: 14rem;
     padding-bottom: 14rem;
+
+    @include respond (tablets) {
+        padding-top: 10rem;
+    }
 }
 
 .stories__list-item {
@@ -15,10 +19,6 @@
     text-align: center;
     position: relative;
     z-index: 1;
-
-    // &:not(:last-child) {
-    //     margin-right: 3rem;
-    // }
 
     &::before {
         content: '';
@@ -29,5 +29,18 @@
         top: -36px;
         left: 140px;
         z-index: -1;
+    }
+
+    @include respond (tablets) {
+        width: 573px;
+        margin: 0 auto;
+        
+        &:not(:last-child) {
+            margin-bottom: 8.4rem;
+        }
+
+        &::before {
+            left: 25.3rem;
+        }
     }
 }

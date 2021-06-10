@@ -4,7 +4,9 @@ footer {
 
 .footer__container {
     display: flex;
-    padding: 4.8rem 0;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8em;
+    flex-wrap: wrap;
 }
 
 .footer__logo {
@@ -13,6 +15,10 @@ footer {
 
 .footer__nav-box {
     margin-right: 12.5rem;
+
+    @include respond (tablets) {
+        margin-right: 0;
+    }
 }
 
 .footer__address {
@@ -21,12 +27,26 @@ footer {
     line-height: 2.5rem;
     font-weight: 600;
     opacity: 0.6;
+
+    @include respond (tablets) {
+        width: 50rem;
+        margin-left: auto;
+        text-align: right;
+    }
 }
 
 .footer__sot-set-box {
     display: block;
     width: 25.5rem;
     margin-left: auto;
+
+    @include respond (tablets) {
+        display: flex;
+        width: 100%;
+        margin-left: 0;
+        justify-content: space-between;
+        padding-top: 3.2rem;
+    }
 }
 
 .icon {
