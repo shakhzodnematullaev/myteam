@@ -1,0 +1,16 @@
+.nav__list-item {
+    @include font;
+
+    &:not(:last-child) {
+        margin-right: 40px;
+    }
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+
+    &:hover, &:active {
+        color: #F67E7E;
+    }
+}

@@ -1,0 +1,22 @@
+.hero {
+    background-image: url(../img/image5.png), url(../img/image6.png);
+    background-repeat: no-repeat;
+    background-position: top 129px left 0, bottom 0 right 165px;
+
+    @include respond (tablets) {
+        background-image: none, url(../img/image6.png);
+        background-position: center bottom;
+    }
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    padding-top: 12.9rem;
+    padding-bottom: 25rem;
+
+    @include respond (tablets) {
+        flex-direction: column;
+        text-align: center;
+    }
+}

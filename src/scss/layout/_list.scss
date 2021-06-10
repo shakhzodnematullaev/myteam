@@ -1,0 +1,21 @@
+.nav__list {
+    @include reset-list;
+}
+
+.manage__list {
+    @include reset-list;
+    flex-direction: column;
+    width: 445px;
+}
+
+.stories__list {
+    @include reset-list;
+}
+
+.sot-set__list {
+    @include reset-list;
+    width: 10.4rem;
+    margin-bottom: 5.1rem;
+    margin-left: auto;
+    justify-content: space-between;
+}

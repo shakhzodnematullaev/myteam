@@ -1,0 +1,37 @@
+// Abstracts
+@import './src/scss/abstracts/variables';
+@import './src/scss/abstracts/utils';
+@import './src/scss/abstracts/mixins';
+// Base
+@import './src/scss/base/base';
+@import './src/scss/base/typography';
+@import './src/scss/base/normalize';
+
+// COMPONENTS
+@import './src/scss/components/btn';
+@import './src/scss/components/card';
+@import './src/scss/components/dropdown';
+
+// LAYOUT
+@import './src/scss/layout/header';
+@import './src/scss/layout/nav';
+@import './src/scss/layout/footer';
+@import './src/scss/layout/forms';
+@import './src/scss/layout/list';
+@import './src/scss/layout/hero';
+@import './src/scss/layout/manage';
+@import './src/scss/layout/cta';
+@import './src/scss/layout/stories';
+
+// PAGES
+@import './src/scss/pages/home';
+@import './src/scss/pages/about';
+@import './src/scss/pages/contact';
+
+// THEMES
+@import './src/scss/themes/theme';
+@import './src/scss/themes/dark';
+
+// VENDORS
+@import './src/scss/vendors/bootstrap';
+@import './src/scss/vendors/semantic-ui';

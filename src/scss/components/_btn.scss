@@ -1,0 +1,29 @@
+.button {
+    @include font;
+
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+    margin-left: auto;
+    background: none;
+    border: 2px solid white;
+    border-radius: 28px;
+    padding: 1rem 3.3rem;
+    color: white;
+
+    &:hover, &:active {
+        background-color: white;
+        color: #002529;
+    }
+}
+
+.button--cta {
+    margin-left: auto;
+    border-color: #012F34;
+    color: #012F34;
+
+    &:hover, &:active {
+        background-color: #012F34;
+        color: white;
+    }
+}

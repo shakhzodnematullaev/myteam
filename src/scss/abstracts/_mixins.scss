@@ -1,0 +1,52 @@
+@mixin baElements ($w, $h) {
+  content: "";
+  display: inline-block;
+  width: $w;
+  height: $h;
+}
+
+@mixin baImages ($w, $h, $url) {
+  @include baElements($w, $h);
+
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@mixin respond ($breakpoint) {
+  @if ($breakpoint==phones) {
+    @media screen and (max-width: 600px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint==tablets) {
+    @media screen and (max-width: 900px) {
+      @content;
+    }
+  }
+
+  @if ($breakpoint==mini-pc) {
+    @media screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  
+  @if ($breakpoint==big-screens) {
+    @media screen and (min-width: 1920px) {
+      @content;
+    }
+  }
+}
+
+@mixin reset-list {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+}
+
+@mixin font {
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+    font-weight: normal;
+}

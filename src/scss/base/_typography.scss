@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'Livvic';
+    src: url('../../fonts/Livvic-Bold.woff2') format('woff2'),
+        url('../../fonts/Livvic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../../fonts/Livvic-SemiBold.woff2') format('woff2'),
+        url('../../fonts/Livvic-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Livvic';
+    src: url('../../fonts/Livvic-MediumItalic.woff2') format('woff2'),
+        url('../../fonts/Livvic-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+.hero__title {
+    font-size: 10rem;
+    line-height: 10rem;
+    font-weight: bold;
+    width: 54rem;
+    margin-right: 12.5rem;
+
+    @include respond (tablets) {
+        font-size: 6.4rem;
+        line-height: 5.6rem;
+        text-align: center;
+    }
+}
+
+.talent {
+    color: #F67E7E;
+}
+
+.hero__text {
+    @include font;
+    display: block;
+    width: 44.5rem;
+    padding-top: 7.9rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 5rem;
+        height: 4px;
+        background-color: #79C8C7;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    @include respond (tablets) {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+.manage__title {
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    font-weight: bold;
+    width: 44.5rem;
+    margin-right: 22rem;
+    position: relative;
+
+    &::before {
+        content: '';
+        width: 5rem;
+        height: 4px;
+        background-color: #F67E7E;
+        position: absolute;
+        top: -5.3rem;
+        left: 0;
+    }
+}
+
+.manage__list-title {
+    @include font;
+    color: #F67E7E;
+    margin-bottom: 1.6rem;
+}
+
+.manage__list-text {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+}
+
+.s__text {
+    display: block;
+    width: 350px;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    margin-bottom: 2.4rem;
+}
+
+.s__author {
+    @include font;
+    color: #79C8C7;
+}
+
+.s__job {
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 3.2rem;
+}
+
+.stories__title {
+    width: 932px;
+    text-align: center;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    font-weight: 700;
+    margin: 0 auto;
+    margin-bottom: 9.2rem;
+}
+
+.success {
+    color: #79C8C7;
+}
+
+.cta__title {
+    width: 50.4rem;
+    margin-right: auto;
+    font-size: 4.8rem;
+    line-height: 4.8rem;
+    color: rgba(1, 47, 52, 1);
+}
+
+.copyright {
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    font-weight: 600;
+    opacity: 0.6;
+}

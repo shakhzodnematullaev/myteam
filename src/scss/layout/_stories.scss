@@ -1,0 +1,33 @@
+.stories {
+    background-image: url(../img/image4.png), url(../img/image2.png);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, bottom 0 right 0;
+}
+
+.stories__container {
+    padding-top: 14rem;
+    padding-bottom: 14rem;
+}
+
+.stories__list-item {
+    display: block;
+    width: 350px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+    &:not(:last-child) {
+        margin-right: 3rem;
+    }
+
+    &::before {
+        content: '';
+        width: 6.7rem;
+        height: 5.6rem;
+        background: url(../img/“.png) no-repeat center center;
+        position: absolute;
+        top: -36px;
+        left: 140px;
+        z-index: -1;
+    }
+}
