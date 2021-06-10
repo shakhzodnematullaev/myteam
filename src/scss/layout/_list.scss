@@ -34,3 +34,9 @@
         margin-bottom: 0;
     }
 }
+
+.directors__list {
+    @include reset-list;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
