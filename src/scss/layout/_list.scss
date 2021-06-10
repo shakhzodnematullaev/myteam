@@ -10,6 +10,7 @@
 
 .stories__list {
     @include reset-list;
+    justify-content: space-between;
 }
 
 .sot-set__list {
