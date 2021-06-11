@@ -9,16 +9,59 @@
 }
 
 .d__list-item {
+    display: block;
     width: 35rem;
     margin-bottom: 7.6rem;
+    position: relative;
 }
 
-.item__box {
+.item__box,
+.item__box2,
+.item__box3,
+.item__box4,
+.item__box5,
+.item__box6 {
     width: 100%;
     background-color: #012F34;
     padding: 3.2rem 2.4rem 2.4rem;
+
+    &--active {
+        display: none;
+        transition: 0.3s;
+    }
 }
 
 .d__img {
     margin-bottom: 1.6rem;
+
+    &--aden {
+        border: 2px solid white;
+        width: 9.6rem;
+        height: 9.6rem;
+        border-radius: 50%;
+    }
+}
+
+.box-info,
+.box-info2,
+.box-info3,
+.box-info4,
+.box-info5,
+.box-info6 {
+    display: none;
+    width: 100%;
+    background-color: #002529;
+    padding: 3.5rem 2.4rem 6.3rem;
+    text-align: center;
+    position: absolute;
+    top: 0;
+
+    &--active {
+        display: block;
+        transition: 0.3s;
+    }
+}
+
+.icon--twitter {
+    margin-right: 1.6rem;
 }

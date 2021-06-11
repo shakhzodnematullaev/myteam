@@ -27,3 +27,56 @@
         color: white;
     }
 }
+
+.d__btn,
+.d__btn2,
+.d__btn3,
+.d__btn4,
+.d__btn5,
+.d__btn6 {
+    display: inline-block;
+    width: 5.6rem;
+    height: 5.6rem;
+    border: none;
+    background-color: #F67E7E;
+    border-radius: 50%;
+    position: absolute;
+    top: 22.5rem;
+    left: 14.7rem;
+
+    &::before {
+        content: '';
+        width: 1.6rem;
+        height: 4px;
+        background-color: #012F34;
+        position: absolute;
+        top: 2.6rem;
+        left: 2rem;
+    }
+
+    &::after {
+        content: '';
+        width: 4px;
+        height: 1.6rem;
+        background-color: #012F34;
+        position: absolute;
+        top: 2rem;
+        left: 2.6rem;
+    }
+
+    &--active {
+        background-color: #79C8C7;
+
+        &::before {
+            transform: rotate(45deg);
+            top: 26px;
+            width: 1.8rem;
+        }
+
+        &::after {
+            transform: rotate(45deg);
+            top: 18px;
+            height: 1.9rem;
+        }
+    }
+}
