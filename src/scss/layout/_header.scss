@@ -1,10 +1,15 @@
 header {
     padding-top: 73px;
+
+    @include respond (phones) {
+        padding-top: 4.8rem;
+    }
 }
 
 .header__container {
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 .logo {

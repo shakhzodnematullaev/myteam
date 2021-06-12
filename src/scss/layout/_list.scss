@@ -1,5 +1,9 @@
 .nav__list {
     @include reset-list;
+
+    @include respond (phones) {
+        flex-direction: column
+    }
 }
 
 .manage__list {

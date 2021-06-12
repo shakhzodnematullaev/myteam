@@ -24,6 +24,16 @@ var btn6 = document.querySelector(".d__btn6");
 var itembox6 = document.querySelector(".item__box6");
 var boxinfo6 = document.querySelector(".box-info6");
 
+var burger = document.querySelector(".hamburger");
+var nav = document.querySelector(".wrapper");
+var body = document.querySelector("body");
+
+burger.addEventListener("click", function() {
+    burger.classList.toggle("hamburger--active");
+    nav.classList.toggle("wrapper--active");
+    body.classList.toggle("body")
+})
+
 btn.addEventListener("click", function() {
     btn.classList.toggle("d__btn--active");
     itembox.classList.toggle("item__box--active");

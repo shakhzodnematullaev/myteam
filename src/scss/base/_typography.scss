@@ -188,13 +188,13 @@
     line-height: 10rem;
     font-weight: bold;
 
-    // @include respond (tablets) {
-    //     font-size: 6.4rem;
-    //     line-height: 5.6rem;
-    //     text-align: center;
-    //     width: 34.5rem;
-    //     margin-bottom: 2.4rem;
-    // }
+    @include respond (tablets) {
+        font-size: 6.4rem;
+        line-height: 5.6rem;
+        text-align: center;
+        width: 34.5rem;
+        margin-bottom: 2.4rem;
+    }
 }
 
 .about__text {
@@ -238,10 +238,13 @@
     }
 }
 
-.s__text {
+.d__text {
     width: 25.4rem;
     margin: 0 auto;
     margin-bottom: 2.4rem;
+    display: block;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
 
     @include respond (tablets) {
         width: 100%;
