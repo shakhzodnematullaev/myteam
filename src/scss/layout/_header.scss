@@ -9,4 +9,8 @@ header {
 
 .logo {
     margin-right: 8rem;
+
+    @include respond (tablets) {
+        margin-right: 4.8rem;
+    }
 }

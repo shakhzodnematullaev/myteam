@@ -39,4 +39,9 @@
     @include reset-list;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @include respond (tablets) {
+        width: 57.3rem;
+        margin: 0 auto;
+    }
 }

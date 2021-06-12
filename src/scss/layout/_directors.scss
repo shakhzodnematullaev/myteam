@@ -1,5 +1,8 @@
 .directors {
     background-color: #004047;
+    background-image: url(../img/image11.png), url(../img/image4.png);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, bottom 0 right 0;
 }
 
 .directors__container {
@@ -13,6 +16,15 @@
     width: 35rem;
     margin-bottom: 7.6rem;
     position: relative;
+
+    @include respond (tablets) {
+        width: 28.1rem;
+
+        &:nth-child(5),
+        &:nth-child(6) {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .item__box,
@@ -33,13 +45,6 @@
 
 .d__img {
     margin-bottom: 1.6rem;
-
-    &--aden {
-        border: 2px solid white;
-        width: 9.6rem;
-        height: 9.6rem;
-        border-radius: 50%;
-    }
 }
 
 .box-info,
