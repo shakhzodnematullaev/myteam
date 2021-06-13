@@ -304,3 +304,39 @@
         margin-bottom: 6.4rem;
     }
 }
+
+.contact__title {
+    font-size: 6.4rem;
+    line-height: 10rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1.6rem;
+
+    @include respond (tablets) {
+        line-height: 5.6rem;
+        margin-bottom: 2.4rem;
+    }
+
+    @include respond (phones) {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 1.6rem;
+    }
+}
+
+.contact__sub-title {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    color: #F67E7E;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5.4rem;
+
+    @include respond (tablets) {
+        margin-bottom: 4.6rem;
+    }
+
+    @include respond (phoes) {
+        margin-bottom: 4.8rem;
+    }
+}

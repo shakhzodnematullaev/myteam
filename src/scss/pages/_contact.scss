@@ -1,0 +1,73 @@
+.contact {
+    background-image: url(../img/image11.png), url(../img/image16.png);
+    background-repeat: no-repeat;
+    background-position: top 0 left 0, bottom 0 right 0;
+
+    @include respond (tablets) {
+        background-position: top 11rem left 0, bottom 0 right 0;
+    }
+
+    @include respond (phones) {
+        background-image: url(../img/image17.png);
+        background-position: right 0 bottom 0;
+    }
+}
+
+.contact__container {
+    display: flex;
+    align-items: center;
+    padding-top: 12rem;
+    padding-bottom: 12rem;
+    justify-content: space-between;
+
+    @include respond (tablets) {
+        flex-direction: column;
+        padding-top: 11.2rem;
+    }
+}
+
+.contact__box {
+    @include respond (tablets) {
+        text-align: center;
+        margin-bottom: 6.4rem;
+    }
+}
+
+.c__l-item {
+    @include font;
+    position: relative;
+    text-align: left;
+
+    &:not(:last-child) {
+        margin-bottom: 5.2rem;
+    }
+
+    &::before {
+        content: '';
+        width: 7.2rem;
+        height: 7.2rem;
+        position: absolute;
+        top: -73%;
+        left: -9.5rem;
+    }
+
+    @include respond (phones) {
+        width: 23.2rem;
+
+        &::before {
+            top: -16%;
+        }
+    }
+}
+
+.c__l-item--network::before {
+    background: url(../img/individual.png) no-repeat center center;
+}
+
+.c__l-item--soft::before {
+    background: url(../img/implement.png) no-repeat center center;
+}
+
+.c__l-item--drive::before {
+    background: url(../img/product.png) no-repeat center center;
+}

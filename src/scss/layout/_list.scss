@@ -73,3 +73,9 @@
         width: 100%;
     }
 }
+
+.contact__list {
+    @include reset-list;
+    flex-direction: column;
+    padding-left: 9.5rem;
+}

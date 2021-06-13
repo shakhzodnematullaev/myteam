@@ -1,0 +1,23 @@
+.form {
+    width: 54.2rem;
+
+    @include respond (phones) {
+        width: 100%;
+    }
+}
+
+.input {
+    padding: 1.4rem 1.7rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    width: 100%;
+    font-size: 1.5rem;
+    line-height: 2.5rem;
+    color: white;
+
+    &:active {
+        background-color: transparent;
+        color: white;
+    }
+}
