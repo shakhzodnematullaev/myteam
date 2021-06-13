@@ -7,10 +7,24 @@ footer {
     padding-top: 4.8rem;
     padding-bottom: 4.8em;
     flex-wrap: wrap;
+
+    @include respond (phones) {
+        padding-top: 6.6rem;
+        padding-bottom: 6.4rem;
+    }
 }
 
 .footer__logo {
     margin-bottom: 2.5rem;
+
+    @include respond (phones) {
+        width: 9.6rem;
+        margin-bottom: 2.4rem;
+    }
+}
+
+.footer__logo-link {
+    margin: 0 auto;
 }
 
 .footer__nav-box {
@@ -18,6 +32,11 @@ footer {
 
     @include respond (tablets) {
         margin-right: 0;
+    }
+
+    @include respond (phones) {
+        margin: 0 auto;
+        text-align: center;
     }
 }
 
@@ -33,6 +52,11 @@ footer {
         margin-left: auto;
         text-align: right;
     }
+
+    @include respond (phones) {
+        // margin: 0 auto;
+        text-align: center;
+    }
 }
 
 .footer__sot-set-box {
@@ -46,6 +70,11 @@ footer {
         margin-left: 0;
         justify-content: space-between;
         padding-top: 3.2rem;
+    }
+
+    @include respond (phones) {
+        flex-direction: column;
+        text-align: center;
     }
 }
 

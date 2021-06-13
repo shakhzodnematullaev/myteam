@@ -17,4 +17,9 @@
     @include respond (tablets) {
         padding: 7.6rem 9.8rem;
     }
+
+    @include respond (phones) {
+        flex-direction: column;
+        padding: 8.3rem 8.5rem;
+    }
 }

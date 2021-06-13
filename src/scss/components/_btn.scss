@@ -30,6 +30,10 @@
         background-color: #012F34;
         color: white;
     }
+
+    @include respond (phones) {
+        margin-left: 0;
+    }
 }
 
 .d__btn,

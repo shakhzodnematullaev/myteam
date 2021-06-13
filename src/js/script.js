@@ -50,6 +50,7 @@ btn.addEventListener("click", function() {
     btn5.classList.remove("d__btn5--active");
     itembox5.classList.remove("item__box5--active");
     boxinfo5.classList.remove("box-info5--active");
+    btn6.classList.remove("d__btn6--active");
     itembox6.classList.remove("item__box6--active");
     boxinfo6.classList.remove("box-info6--active");
 })
@@ -70,6 +71,7 @@ btn2.addEventListener("click", function() {
     btn5.classList.remove("d__btn5--active");
     itembox5.classList.remove("item__box5--active");
     boxinfo5.classList.remove("box-info5--active");
+    btn6.classList.remove("d__btn6--active");
     itembox6.classList.remove("item__box6--active");
     boxinfo6.classList.remove("box-info6--active");
 })

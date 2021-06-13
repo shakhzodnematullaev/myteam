@@ -11,6 +11,10 @@
     @include respond (tablets) {
         padding-top: 10rem;
     }
+
+    @include respond (phones) {
+        padding-top: 14rem;
+    }
 }
 
 .stories__list-item {
@@ -41,6 +45,14 @@
 
         &::before {
             left: 25.3rem;
+        }
+    }
+
+    @include respond (phones) {
+        width: 100%;
+
+        &::before {
+            left: 13rem;
         }
     }
 }

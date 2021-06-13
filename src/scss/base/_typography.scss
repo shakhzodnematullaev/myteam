@@ -39,6 +39,13 @@
         width: 34.5rem;
         margin-bottom: 2.4rem;
     }
+
+    @include respond (phones) {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 1.8rem;
+        width: 21.1rem;
+    }
 }
 
 .talent {
@@ -72,6 +79,10 @@
             display: none;
         }
     }
+
+    @include respond (phones) {
+        width: 32.7rem;
+    }
 }
 
 .manage__title {
@@ -100,6 +111,11 @@
         &::before {
             top: -3.2rem;
         }
+    }
+
+    @include respond (phones) {
+        width: 24rem;
+        margin-bottom: 14.4rem;
     }
 }
 
@@ -156,6 +172,10 @@
         line-height: 3.2rem;
         margin-bottom: 8.4rem;
     }
+
+    @include respond (phones) {
+        width: 32.7rem;
+    }
 }
 
 .success {
@@ -173,6 +193,14 @@
         width: 33.6rem;
         font-size: 3.2em;
         line-height: 3.2rem;
+    }
+
+    @include respond (phones) {
+        width: 20.5rem;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 2.4rem;
+
     }
 }
 
