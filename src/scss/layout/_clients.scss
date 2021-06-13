@@ -7,6 +7,10 @@
     @include respond (tablets) {
         background-image: url(../img/image10.png);
     }
+
+    @include respond (phones) {
+        background-image: url(../img/image15.png);
+    }
 }
 
 .clients__container {
@@ -15,8 +19,11 @@
     text-align: center;
 
     @include respond (tablets) {
-        padding-top: 10rem;
-        padding-bottom: 10rem;
+        padding: 10rem 1.5rem;
+    }
+
+    @include respond (phones) {
+        padding: 8.8rem 1.5rem;
     }
 }
 
@@ -24,11 +31,20 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include respond (phones) {
+        flex-direction: column;
+    }
 }
 
 .verge {
     @include respond (tablets) {
         width: 10rem;
+    }
+
+    @include respond (phones) {
+        width: 14.7rem;
+        margin-bottom: 6.6rem;
     }
 }
 
@@ -36,11 +52,22 @@
     @include respond (tablets) {
         width: 11.4rem;
     }
+
+    @include respond (phones) {
+        width: 16.2rem;
+        margin-bottom: 6.6rem;
+    }
 }
 
 .guardian {
     @include respond (tablets) {
         width: 11.2rem;
+        margin-bottom: 6.6rem;
+    }
+
+    @include respond (phones) {
+        width: 16rem;
+        margin-bottom: 6.6rem;
     }
 }
 
@@ -48,10 +75,20 @@
     @include respond (tablets) {
         width: 10.3rem;
     }
+
+    @include respond (phones) {
+        width: 14.7rem;
+        margin-bottom: 6.6rem;
+    }
 }
 
 .gadgets {
     @include respond (tablets) {
         width: 6.1rem;
+    }
+
+    @include respond (phones) {
+        width: 8.6rem;
+        // margin-bottom: 6.6rem;
     }
 }

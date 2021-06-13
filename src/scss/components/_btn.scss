@@ -91,6 +91,10 @@
     @include respond (tablets) {
         left: 11.2rem;
     }
+
+    @include respond (phones) {
+        left: calc(50% - 28px);
+    }
 }
 
 .hamburger {

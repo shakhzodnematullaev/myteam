@@ -52,7 +52,7 @@
         width: 100%;
 
         &::before {
-            left: 13rem;
+            left: calc(50% - 37px);
         }
     }
 }

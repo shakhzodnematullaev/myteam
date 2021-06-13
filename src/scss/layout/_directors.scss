@@ -3,12 +3,20 @@
     background-image: url(../img/image11.png), url(../img/image4.png);
     background-repeat: no-repeat;
     background-position: top 0 left 0, bottom 0 right 0;
+
+    @include respond (phones) {
+        background-image: url(../img/image14.png), url(../img/image4.png);
+    }
 }
 
 .directors__container {
     padding-top: 14rem;
     padding-bottom: 14rem;
     text-align: center;
+
+    @include respond (phones) {
+        padding-top: 8.8rem;
+    }
 }
 
 .d__list-item {
@@ -23,6 +31,15 @@
         &:nth-child(5),
         &:nth-child(6) {
             margin-bottom: 0;
+        }
+    }
+
+    @include respond (phones) {
+        width: 100%;
+        height: 25rem;
+
+        &:not(:last-child) {
+            margin-bottom: 5.2rem;
         }
     }
 }

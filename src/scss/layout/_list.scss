@@ -67,4 +67,9 @@
         width: 57.3rem;
         margin: 0 auto;
     }
+
+    @include respond (phones) {
+        flex-direction: column;
+        width: 100%;
+    }
 }

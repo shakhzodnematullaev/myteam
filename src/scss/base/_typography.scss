@@ -223,6 +223,12 @@
         width: 34.5rem;
         margin-bottom: 2.4rem;
     }
+
+    @include respond (phones) {
+        font-size: 4rem;
+        line-height: 4rem;
+        margin-bottom: 1.6rem;
+    }
 }
 
 .about__text {
@@ -251,6 +257,10 @@
         &::before {
             display: none;
         }
+    }
+
+    @include respond (phones) {
+        width: 32.7rem;
     }
 }
 
@@ -288,5 +298,9 @@
         font-size: 3.2rem;
         line-height: 3.2rem;
         margin-bottom: 4.8rem;
+    }
+
+    @include respond (phones) {
+        margin-bottom: 6.4rem;
     }
 }
