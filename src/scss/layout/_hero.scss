@@ -1,11 +1,26 @@
 .hero {
+    
     background-image: url(../img/image5.png), url(../img/image6.png);
     background-repeat: no-repeat;
     background-position: top 129px left 0, bottom 0 right 165px;
-
+    
     @include respond (tablets) {
         background-image: none, url(../img/image6.png);
         background-position: center bottom;
+    }
+    
+    @media
+    only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (   min--moz-device-pixel-ratio: 2),
+    only screen and (     -o-min-device-pixel-ratio: 2/1),
+    only screen and (        min-device-pixel-ratio: 2),
+    only screen and (                min-resolution: 192dpi),
+    only screen and (                min-resolution: 2dppx) { 
+      
+        .hero {
+        background-image: url(../img/image5@2x.png), url(../img/image6@2x.png);
+        }
+    
     }
 }
 
